@@ -9,6 +9,12 @@
     --font-body: 'Inter', system-ui, sans-serif;
 }
 
+[data-theme="light"] {
+    --bg: #F5F2EC;
+    --border: #FF6A1C;
+    --text: #1B1D23;
+}
+
 @property --tw-outline-style {
     syntax: "*";
     inherits: false;
@@ -25,6 +31,14 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 56px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#themeToggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
 }
 
 a {
