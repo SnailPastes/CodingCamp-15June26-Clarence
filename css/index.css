@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --bg: #1B1D23;
+    --border: #FF6A1C;
+    --text: #EDEAE3;
+
+    --font-display: 'JetBrains Mono', monospace;
+    --font-body: 'Inter', system-ui, sans-serif;
+}
+
+@property --tw-outline-style {
+    syntax: "*";
+    inherits: false;
+    initial-value: solid;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    padding: 48px 24px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+}
+
+a {
+    color: var(--text);
+    font-weight: bold;
+    font-family: var(--font-body);
+}
+
+input {
+    background-color: transparent;
+    border-color: var(--border);
+    border-radius: 5px;
+    color: var(--text);
+    padding: 5px 5px 5px 5px;
+    font-family: var(--font-body);
+}
+
+#greetingDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headDiv {
+    outline-style: var(--tw-outline-style);
+    outline-width: 4px;
+    outline-color: var(--border);
+    padding: 10px 20px 20px 10px;
+    margin: 20px 0px 0px 20px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.superDiv {
+    display: flex;
+    gap: 20px;
+}
+
+.tasks{
+    display: flex;
+    width: 100%;
+}
+
+.task {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: between;
+}
+
+#linkDiv {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    width: 100px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: #FF6A1C;
+    position: relative;
+    font-family: var(--font-body);
+}
+
+.linkDel {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: var(--text);
+}
+
+.bigBtn {
+    padding: 5px 5px 5px 5px;
+    background-color: var(--border);
+    color: var(--text);
+    border-color: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: var(--font-body);
+}
+
+.bigBtn:hover {
+    background-color: #b04409;
+}
+
+.smallBtn {
+    padding: 5px 5px 5px 5px;
+    background-color: transparent;
+    color: var(--text);
+    border-color: var(--border);
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: var(--font-body);
+}
+
+.running {
+    background-color: #b04409;
+}
